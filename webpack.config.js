@@ -2,12 +2,10 @@ const path = require('path');
 
 module.exports = {
     mode: 'production',
-    entry: {
-        "random-key": "./src/random-key.mjs",
-    },
+    entry: "./src/random-key.mjs",
     output: {
         path: path.resolve(__dirname),
-        filename: "[name].js",
+        filename: "index.js",
         library:{
             type: "commonjs-static",
         }

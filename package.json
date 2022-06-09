@@ -1,8 +1,8 @@
 {
   "name": "@makechtec/randomkey",
-  "version": "1.0.4",
+  "version": "2.0.0",
   "description": "generate randomkeyid",
-  "main": "dist/Id.js",
+  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -20,13 +20,5 @@
   "bugs": {
     "url": "https://github.com/angeldomp49/randomKey/issues"
   },
-  "homepage": "https://github.com/angeldomp49/randomKey#readme",
-  "devDependencies": {
-    "@babel/plugin-proposal-class-properties": "^7.17.12",
-    "webpack": "^5.72.1",
-    "webpack-cli": "^4.9.2",
-    "@babel/core": "^7.18.2",
-    "@babel/preset-env": "^7.18.2",
-    "babel-loader": "^8.2.5"
-  }
+  "homepage": "https://github.com/angeldomp49/randomKey#readme"
 }
