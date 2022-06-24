@@ -1,6 +1,6 @@
 {
   "name": "@makechtec/randomkey",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "generate randomkeyid",
   "main": "index.js",
   "scripts": {
@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/angeldomp49/randomKey.git"
+    "url": "git+https://github.com/MakechTec/randomkey.git"
   },
   "keywords": [
     "random",
