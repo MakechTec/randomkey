@@ -2,10 +2,10 @@ const path = require('path');
 
 module.exports = {
     mode: 'production',
-    entry: "./src/random-key.mjs",
+    entry: "./src/index.ts",
     output: {
-        path: path.resolve(__dirname),
         filename: "index.js",
+        path: path.resolve(__dirname),
         library:{
             type: "commonjs-static",
         }
@@ -13,17 +13,16 @@ module.exports = {
     module:{
         rules: [
             {
-                test: /\.js$/,
-                use: [
-                    {
-                        loader: "babel-loader",
-                        options: {
-                            presets: ["@babel/preset-env"],
-                            plugins: ["@babel/plugin-proposal-class-properties"],
-                        }
-                    }
-                ],
+                test: /\.(ts)$/,
+                use: "babel-loader",
+                exclude: /node_modules/ 
             }
         ],
     },
+    resolve: {
+        extensions: [".ts"]
+    },
+    target: "web",
+    plugins: [
+    ]
 };
