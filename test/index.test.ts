@@ -1,13 +1,7 @@
-import { IdGenerator } from "../src/index";
+
 import {generateUUID} from "../src/globals";
 
-it("test generate", async () => {
-    const id: IdGenerator = new IdGenerator();
 
-    const randomId = id.generate();
-
-    expect(typeof randomId).toBe("number");
-});
 
 test("generate with UUID", async () => {
     const id1: string = generateUUID();

@@ -1,4 +1,4 @@
-import {IdGenerator} from "./index";
+
 
 export const generateUUID = () => {
     return 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, function(c) {
