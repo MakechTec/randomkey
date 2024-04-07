@@ -8,6 +8,21 @@ installation:
 
 For use:
 
+    import {generateUUID} from "../src/globals";
+
+    let generatedId: string = generateUUID();
+
+the result is simply a random integer generated id like:
+
+    generatedId: b9e74730-8e06-4a19-bcd6-1c0d7d263ea4
+
+## RELEASES NOTES ##
+
+### v4.0.0 ###
+- changed algorithm to UUID, to be more efficient
+
+change use from:
+
     import {IdGenerator} from "@makechtec/randomkey";
 
     const idGenerator = new IdGenerator();
@@ -16,11 +31,12 @@ For use:
 
     console.log(generatedId);
 
-the result is simply a random integer generated id like:
+to
+    
+    import {generateUUID} from "../src/globals";
+    
+    let generatedId: string = generateUUID();
 
-    generatedId: 1654763659568
-
-## RELEASES NOTES ##
 
 ### v3.0.0 ###
 - added duplicate comprobation, then a number id never is equal for a same IdGenerator instance.
